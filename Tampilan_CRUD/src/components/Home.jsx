@@ -33,7 +33,7 @@ export default function Home() {
                     <Link to="/rentals" className="btn btn-primary mx-2">
                         View Rentals
                     </Link>
-                    <Link to="/create-rental" className="btn btn-secondary mx-2">
+                    <Link to="/devices" className="btn btn-secondary mx-2">
                         Rent a Device
                     </Link>
                 </div>

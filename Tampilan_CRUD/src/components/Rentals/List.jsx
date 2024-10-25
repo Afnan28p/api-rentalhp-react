@@ -19,17 +19,17 @@ export default function List() {
             });
     }, []);
 
-    // // Mengambil data devices
-    // useEffect(() => {
-    //     axios.get('https://api-rentalhp.vercel.app/api/api/devices')
-    //         .then(responses => {
-    //             console.log(responses.data.result);
-    //             setDevices(responses.data.result);
-    //         })
-    //         .catch(error => {
-    //             console.log('Error : ', error);
-    //         });
-    // }, []);
+    // Mengambil data devices
+    useEffect(() => {
+        axios.get('https://api-rentalhp.vercel.app/api/api/devices')
+            .then(responses => {
+                console.log(responses.data.result);
+                setDevices(responses.data.result);
+            })
+            .catch(error => {
+                console.log('Error : ', error);
+            });
+    }, []);
 
     // Fungsi untuk menghapus data rental berdasarkan ID
     const handleDelete = (id, name) => {
